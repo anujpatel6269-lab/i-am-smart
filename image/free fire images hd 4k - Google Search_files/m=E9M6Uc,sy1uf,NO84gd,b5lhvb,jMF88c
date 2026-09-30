@@ -1,0 +1,22 @@
+loaded_h_0(function(_){var window=this;
+_.v("E9M6Uc");
+var JRu;JRu=class{constructor(){this.logger=null;this.Sj=new _.No("uvpgws")}iBa(){this.Sj=new _.No("uvpgws");_.toi=!0}Vc(a){_.uoi(a);this.Sj.ka.JL()&&this.Sj.Ec("uvpvoct",Math.round(a).toString())}};_.KRu=new JRu;_.LRu=class extends _.qo{Vc(a){_.KRu.Vc(a)}};_.$f(_.i3a,_.LRu);
+_.w();
+_.HTd=function(a,b){return _.ej(a,1,b)};_.ITd=function(a,b){return _.Yg(a,3,b)};
+_.v("NO84gd");
+
+_.w();
+_.v("b5lhvb");
+var dSu=function(a){return a instanceof _.wh?a.getRoot().el():a},eSu=function(){var a=_.KRu;a.Sj.ka.JL()||(a.Sj.start(),window.performance&&a.Sj.Nz("ns",Math.round(a.Sj.ka.getStartTime())*-1),a.Sj.Nz("uvpbet",0))},fSu=class extends _.m{constructor(a){super(a)}getViewerType(){return _.sj(this,1)}Gy(a){return _.Sh(this,1,a)}},gSu=function(a,b){var c=a.oa.get(b);if(c)return c;c=new Map;a.oa.set(b,c);return c},hSu=async function(a,b,c){var d=(0,_.Qf)(),e=d();d=d(1);try{a.ka.delete(c.getIdentifier());
+let f=gSu(a,c.getIdentifier()),g=f.size===0;f.set(b,c);g?d(await e(a.listener.GIe?.(c.getIdentifier()))):d(await e(a.listener.NEd?.(c.getIdentifier())))}finally{e()}},iSu=async function(a,b,c){var d=(0,_.Qf)(),e=d();d=d(1);try{a.ka.delete(c.getIdentifier()),gSu(a,c.getIdentifier()).set(b,c),d(await e(a.listener.NEd?.(c.getIdentifier())))}finally{e()}},jSu=async function(a,b,c){var d=(0,_.Qf)(),e=d();d=d(1);try{a.ka.delete(c);let f=gSu(a,c);f.delete(b);f.size===0?(a.oa.delete(c),d(await e(a.listener.ffg?.(c)))):
+d(await e(a.listener.NEd?.(c)))}finally{e()}},kSu=class{constructor(a){this.listener=a;this.oa=new Map;this.ka=new Map}EMa(a){if(this.ka.has(a))return this.ka.get(a);var b;if((b=this.oa.get(a))&&b.size!==0)return b.size===1?b=b.values().next().value:(b=[...b.entries()].sort((c,d)=>_.rKa(dSu(c[0]),dSu(d[0]))).map(c=>c[1]).flatMap(c=>c.oa()),b=_.HTd(_.ITd(new _.GTd,a),b)),this.ka.set(a,b),b}},lSu=!!(_.Bi[45]>>26&1);var mSu=function(a,b){a.KGb.has(b)||a.KGb.set(b,(0,_.go)(()=>{a.JGb(b)},1E3))};
+_.$f(_.k3a,class extends _.qo{static Ra(){return{service:{yab:_.MRu,nHb:_.LRu}}}constructor(a){super();this.yFb=new kSu(this);this.dlc=new Set;this.fcd=new Set;this.KGb=new Map;this.yab=a.service.yab;this.nHb=a.service.nHb;this.Mgb().then(b=>{b.ESe(c=>this.yFb.EMa(c))})}async GIe(){var a=(0,_.Qf)(),b=a();a=a(1);try{if(!lSu){let c=a(await b(this.Mgb()));eSu();c.tSb()}}finally{b()}}pmb(a,b){this.dlc.has(b.getIdentifier())&&mSu(this,b.getIdentifier());return hSu(this.yFb,a,b)}w0e(a,b){this.dlc.has(b.getIdentifier())&&
+mSu(this,b.getIdentifier());return iSu(this.yFb,a,b)}aSd(a,b){this.dlc.has(b)&&mSu(this,b);return jSu(this.yFb,a,b)}async AYb(a){var b=(0,_.Qf)(),c=b();b=b(1);try{let d=b(await c(this.Mgb()));lSu&&(eSu(),d.tSb());d.iLc(a)}finally{c()}}async a7(a){var b=(0,_.Qf)(),c=b();b=b(1);try{let g=b(await c(this.EMa(a)));if(g){var d=g.oa().findIndex(h=>h.K3()===a.Sw);if(d!==-1){_.si(g,2,d);var e=a.mJd;e.id||(e.id=_.Yw());this.dlc.add(a.streamId);this.KGb.has(a.streamId)&&((0,_.ho)(this.KGb.get(a.streamId)),this.KGb.delete(a.streamId));
+var f=b(await c(this.Mgb()));b(await c(f.Nxb(g,null,a.wka??null,a.nJd??null,a.interactionVed??null,a.Mi??null,a.userAction??null,a.Rfd,e.id)))}}}finally{c()}}async zTc(a){var b=(0,_.Qf)(),c=b();b=b(1);try{if(!this.fcd.has(a)){this.fcd.add(a);var d=_.YRu(),e=d.sendMessage,f=new _.URu,g=(new fSu).Gy(a);var h=_.dj(f,15,_.TRu,g);b(await c(e.call(d,h)))}}finally{c()}}async JGb(a){var b=(0,_.Qf)(),c=b();b=b(1);try{let d=b(await c(this.Mgb()));this.KGb.delete(a);let e=this.yFb.EMa(a);e||=_.ITd(new _.GTd,
+a);b(await c(d.JGb(e)))}finally{c()}}Mgb(){return this.yab.Mgb()}EMa(a){return _.led?a.stream:this.yFb.EMa(a.streamId)}});
+_.w();
+_.v("jMF88c");
+_.$f(_.r2a,class extends _.qo{});
+_.w();
+});
+// Google Inc.
